@@ -1,16 +1,16 @@
 :root{
-    --primeiro: #01005B;
-    --segundo: #262BA1;
-    --terceiro: #2E36B2;
-    --quarto: #282CA1;
-    --quinto: #F2F2F2;
+    --primeiro: #212121;
+    --segundo: rgb(17, 17, 17);
+    --terceiro: black;
+    --quarto: white;
+    --quinto: #2F2828;
 }
 
 
 .banner-image{
     max-width: 100%;
-    background: url('../img/banner.jpg');
-    background-size: cover;
+    max-height: 100%;
+    width: 100%;
 } 
 
 .logo{
@@ -89,13 +89,14 @@
 
 .servico{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
+    align-items: center;
 }
 
 #titulo-servico{
     text-align: center;
-    color: white;
+    color: var(--quarto);
     max-width: 100%;
     width: 1200px;
     border-bottom: solid 3px #fff;
@@ -109,7 +110,7 @@
     font-size:1.2em;
 }
 .desc-servico{
-    color: white;
+    color: var(--quarto);
     text-justify: auto;
     margin: 15px;
 }
@@ -129,15 +130,59 @@
 
 .card-button:hover{
     background: #262BA1;
-    color: white;
+    color: var(--quarto);
 }
 
 footer{
-    background: black;
+    background: var(--terceiro);
+}
+
+.rodape{
+    background: var(--quinto) !important;
+    color: var(--quarto) !important;
 }
 
 #footer-text{
     font-size: 1.2em;
     color: white;
     margin: 0;
+}
+.sites-info{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.sites{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.links{
+    margin: 35px;
+}
+
+.links h1{
+    font-size: 1.2em;
+    border-bottom: solid 2px white;
+    max-width: 1200px;
+    text-align: center;
+    margin: 15px;
+}
+
+.links p{
+    line-height: 15px;
+    text-align: start;
+}
+
+.redesSociais{
+    display: flex;
+    justify-content: center;
+}
+
+.redesSociais a img{
+    width: 50px;
+    margin: 15px;
 }
